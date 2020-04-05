@@ -85,15 +85,20 @@ img {
 
 #imagenSecundaria figure:nth-child(1) img:hover {
     transform: rotate(10deg);
+    box-shadow: 2px 2px 6px #82c3a6;
+    border: 2px solid black
 }
 
 #imagenSecundaria figure:nth-child(2) img:hover {
-    transform: translate3d(10px, -5px, 0);
+    transform: translate3d(20px, -5px, 0);
+    box-shadow: 2px 2px 6px #82c3a6;
+    border: 2px solid black
 }
 
 footer {
     height: 150px;
     background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;
 }
 
 @keyframes animarCabecera {
@@ -113,7 +118,7 @@ footer {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
     header{
         height: 85px;
     }
