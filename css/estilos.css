@@ -8,42 +8,52 @@ body {
     /* font-family: 'Dancing Script', cursive; */
     /* background-color: #02010a; */
     background: url(../img/double-bubble-dark.png);
+    
 }
 
 #contenido {
     margin: auto;
     max-width: 900px;
 }
-
-header {
+header{
+    height: 67px;
+}
+header #contenidoCabecera{
     background-color: #5b7989;
     color: white;
     border-radius: 10px 10px 0px 0px;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    animation: animarCabecera 1s;
+    transition: all;    
 }
 
-header h1 {
+#contenidoCabecera h1 {
     padding: 15px;
     text-shadow: 2px 2px 2px #02010a;
 }
 
-header nav a {
+#contenidoCabecera nav a {
     color: white;
     padding: 15px;
 }
 
 #imagenCentral {
     background-color: #82c3a6;
+    
 }
+
 #imagenCentral picture {
     padding: 15px 0;
     display: flex;
     justify-content: center;
 }
 
-img{
+img {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -55,50 +65,90 @@ img{
     justify-content: space-around;
 }
 
-#imagenSecundaria figure{
-   margin: 15px 0;
-   width: 45%;
+#imagenSecundaria figure {
+    margin: 15px 0;
+    width: 45%;
     height: 270px;
 
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-#imagenSecundaria figure img{
-    max-width: 384px; 
+
+#imagenSecundaria figure img {
+    max-width: 384px;
     width: 100%;
     transition: all 1s;
 }
-#imagenSecundaria figure figcaption{
+
+#imagenSecundaria figure figcaption {
     margin-top: 5px;
 }
-#imagenSecundaria figure:nth-child(1) img:hover{
+
+#imagenSecundaria figure:nth-child(1) img:hover {
     transform: rotate(10deg);
 }
-#imagenSecundaria figure:nth-child(2) img:hover{
+
+#imagenSecundaria figure:nth-child(2) img:hover {
     transform: translate3d(10px, -5px, 0);
 }
+
 footer {
     height: 150px;
     background-color: #C6d5c5;
 }
 
-@media screen and (max-width:768px){
+@keyframes animarCabecera {
+    0% {
+        margin-top: 150%;
+        position: absolute;
+    }
+
+    60% {
+        margin-top: -5%;
+        position: absolute;
+    }
+
+    100% {
+        margin: 0%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:768px) {
     header{
+        height: 85px;
+    }
+    header #contenidoCabecera{
+        animation: animarCabecera;
+    }
+
+    header #contenidoCabecera{
         flex-direction: column;
+        height: 85px;
+        animation: animarCabecera 1s;
     }
-    header h1{
+    header #contenidoCabecera h1 {
         text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 1.5em;
     }
-    #imagenSecundaria{
+    #contenidoCabecera nav {
+        height: 50%;
+    }
+    
+    #imagenSecundaria {
         flex-direction: column;
         align-items: center;
     }
-    #imagenSecundaria figure{
+
+    #imagenSecundaria figure {
         width: 95%;
         height: 50%;
     }
-    #imagenSecundaria figure img{
+
+    #imagenSecundaria figure img {
         max-width: 95%;
     }
 }

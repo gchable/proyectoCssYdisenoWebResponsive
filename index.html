@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
     <style>
-        header nav a:first-child{
+        header nav a:first-child {
             text-decoration: none;
-          }
+        }
     </style>
     <title>Página principal</title>
 </head>
@@ -17,21 +17,23 @@
 <body>
     <div id="contenido">
         <header>
-            <div>
-                <h1>Comenzando con la Fotografía</h1>
+            <div id="contenidoCabecera">
+                <div>
+                    <h1>Comenzando con la Fotografía</h1>
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="paisajes.html">Paisajes</a>
+                    <a href="retratos.html">Retratos</a>
+                </nav>
             </div>
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="paisajes.html">Paisajes</a>
-                <a href="retratos.html">Retratos</a>
-            </nav>
         </header>
         <section id="imagenCentral">
-            <picture> 
+            <picture>
                 <source media="(max-width: 640px)" srcset="./img/polynesia-3021072_640.jpg">
                 <source media="(max-width: 1280px)" srcset="./img/polynesia-3021072_1280.jpg">
                 <img src="./img/polynesia-3021072_1920.jpg" alt="Flowers" style="width: 90%;">
-              </picture>
+            </picture>
         </section>
         <section id="imagenSecundaria">
             <figure>
@@ -44,7 +46,7 @@
             </figure>
         </section>
         <footer>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, animi!
+
         </footer>
     </div>
 </body>
