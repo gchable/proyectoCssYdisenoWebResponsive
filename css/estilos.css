@@ -58,9 +58,7 @@ img {
 }
 
 #imagenSecundaria {
-    /* max-height: 286px; */
     background-color: #d5c75f;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
 }
