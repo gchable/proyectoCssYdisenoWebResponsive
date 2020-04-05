@@ -22,7 +22,7 @@ header #contenidoCabecera{
     background-color: #5b7989;
     color: white;
     border-radius: 10px 10px 0px 0px;
-    width: 100%;
+    width: 900px;
 
     display: flex;
     justify-content: space-between;
@@ -126,6 +126,7 @@ footer {
     header #contenidoCabecera{
         flex-direction: column;
         height: 85px;
+        width: 100%;
         animation: animarCabecera 1s;
     }
     header #contenidoCabecera h1 {
