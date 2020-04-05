@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5px;
+    /* font-family: 'Dancing Script', cursive; */
+    /* background-color: #02010a; */
+    background: url(../img/double-bubble-dark.png);
+}
+
+#contenido {
+    margin: auto;
+    max-width: 900px;
+}
+
+header {
+    background-color: #5b7989;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    padding: 15px;
+    text-shadow: 2px 2px 2px #02010a;
+}
+
+header nav a {
+    color: white;
+    padding: 15px;
+}
+
+#imagenCentral {
+    background-color: #82c3a6;
+}
+#imagenCentral picture {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+#imagenSecundaria {
+    /* max-height: 286px; */
+    background-color: #d5c75f;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#imagenSecundaria figure{
+   margin: 15px 0;
+   width: 45%;
+    height: 270px;
+
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+}
+#imagenSecundaria figure img{
+    max-width: 384px; 
+    width: 100%;
+    transition: all 1s;
+}
+#imagenSecundaria figure figcaption{
+    margin-top: 5px;
+}
+#imagenSecundaria figure:nth-child(1) img:hover{
+    transform: rotate(10deg);
+}
+#imagenSecundaria figure:nth-child(2) img:hover{
+    transform: translate3d(10px, -5px, 0);
+}
+footer {
+    height: 150px;
+    background-color: #C6d5c5;
+}
+
+@media screen and (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        text-align: center;
+    }
+    #imagenSecundaria{
+        flex-direction: column;
+        align-items: center;
+    }
+    #imagenSecundaria figure{
+        width: 95%;
+        height: 50%;
+    }
+    #imagenSecundaria figure img{
+        max-width: 95%;
+    }
+}
