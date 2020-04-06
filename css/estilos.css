@@ -5,7 +5,7 @@
 
 body {
     margin: 5px;
-    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Dancing Script', cursive;
     /* background-color: #02010a; */
     background: url(../img/double-bubble-dark.png);
 
@@ -80,6 +80,10 @@ header #contenidoCabecera {
     max-width: 384px;
     width: 100%;
     transition: all 1s;
+}
+
+#imagenSecundaria figure a {
+    color: black;
 }
 
 #imagenSecundaria figure figcaption {
