@@ -8,17 +8,19 @@ body {
     /* font-family: 'Dancing Script', cursive; */
     /* background-color: #02010a; */
     background: url(../img/double-bubble-dark.png);
-    
+
 }
 
 #contenido {
     margin: auto;
     max-width: 900px;
 }
-header{
+
+header {
     height: 67px;
 }
-header #contenidoCabecera{
+
+header #contenidoCabecera {
     background-color: #5b7989;
     color: white;
     border-radius: 10px 10px 0px 0px;
@@ -29,7 +31,7 @@ header #contenidoCabecera{
     align-items: center;
 
     animation: animarCabecera 1s;
-    transition: all;    
+    transition: all;
 }
 
 #contenidoCabecera h1 {
@@ -44,7 +46,7 @@ header #contenidoCabecera{
 
 #imagenCentral {
     background-color: #82c3a6;
-    
+
 }
 
 #imagenCentral picture {
@@ -53,7 +55,8 @@ header #contenidoCabecera{
     justify-content: center;
 }
 
-img {
+#imagenCentral img,
+#imagenSecundaria img {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -96,9 +99,59 @@ img {
 }
 
 footer {
-    height: 150px;
+    /* height: 150px; */
+    padding: 15px;
     background-color: #C6d5c5;
     border-radius: 0 0 10px 10px;
+
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+footer>div {
+    padding-left: 15px;
+    flex: 1 1;
+}
+
+
+footer div:nth-child(1) {
+    flex: 1.3;
+}
+
+footer div:nth-child(2) {
+    flex: 1.4;
+}
+
+#redes>div:nth-child(2)::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../icon/facebook.png);
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: -10%;
+}
+
+#redes>div:nth-child(3)::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../icon/gorjeo.png);
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: -10%;
+}
+
+#redes>div:nth-child(4)::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../icon/instagram.png);
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: -10%;
 }
 
 @keyframes animarCabecera {
@@ -119,29 +172,32 @@ footer {
 }
 
 @media screen and (max-width:900px) {
-    header{
+    header {
         height: 85px;
     }
-    header #contenidoCabecera{
+
+    header #contenidoCabecera {
         animation: animarCabecera;
     }
 
-    header #contenidoCabecera{
+    header #contenidoCabecera {
         flex-direction: column;
         height: 85px;
         width: 100%;
         animation: animarCabecera 1s;
     }
+
     header #contenidoCabecera h1 {
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
     }
+
     #contenidoCabecera nav {
         height: 50%;
     }
-    
+
     #imagenSecundaria {
         flex-direction: column;
         align-items: center;
@@ -154,5 +210,19 @@ footer {
 
     #imagenSecundaria figure img {
         max-width: 95%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer>div {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header #contenidoCabecera h1 {
+        font-size: 1.5em;
     }
 }
