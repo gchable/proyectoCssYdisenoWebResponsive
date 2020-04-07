@@ -158,7 +158,10 @@ footer div:nth-child(2) {
     margin-right: 5px;
     vertical-align: -10%;
 }
-
+#redes div a{
+    text-decoration: none;
+    color: inherit;
+}
 @keyframes animarCabecera {
     0% {
         margin-top: 150%;
